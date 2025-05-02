@@ -16,7 +16,6 @@ int main()
     int five = 0;
     int six = 0;
     int sum = 0;
-    float average = 0;
 
     for (int i = 0; i < 100; i++){
         int dice_roll = (rand() % 6) + 1;
@@ -40,8 +39,6 @@ int main()
         sum += dice_rolls[i];
     }
 
-    average = sum / 100.0;
-
     printf("%d\n", one);
     printf("%d\n", two);
     printf("%d\n", three);
@@ -49,7 +46,7 @@ int main()
     printf("%d\n", five);
     printf("%d\n", six);
     printf("%d\n", sum);
-    printf("%.1f\n", average);
+    printf("%.1f\n", sum / 100.0);
 
 
     return 0;
